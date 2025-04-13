@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+body {
+  overflow-x: hidden;
+  font-family: "General Sans", sans-serif;
+}
+
+.height-element { height: 100vh; height: 100lvh }
+@supports (-webkit-touch-callout: none) {
+    @media screen and (max-width: 991px) {
+        .element { height: calc( var( --vh, 1vh ) * 100 ); }
+    }
+}
+
+.element { height: 100vh; height: 100lvh }
+@supports (-webkit-touch-callout: none) {
+    @media screen and (max-width: 991px) {
+        .element { height: calc( var( --vh, 1vh ) * 100 ); }
+    }
+}
+
+
+@layer base {
+  @font-face {
+    font-family: materialsymbols-regular;
+    src: url('/icons/MaterialSymbolsRounded_Filled-Regular.ttf') format('truetype');
+  }
+  @font-face {
+      font-family: dosis-bold;
+      src: url('/fonts/Dosis/Dosis-Bold.ttf') format('truetype');
+  }
+  @font-face {
+      font-family: dosis-extrabold;
+      src: url('/fonts/Dosis/Dosis-ExtraBold.ttf') format('truetype');
+  }
+  @font-face {
+      font-family: dosis-extralight;
+      src: url('/fonts/Dosis/Dosis-ExtraLight.ttf') format('truetype');
+  }
+  @font-face {
+      font-family: dosis-light;
+      src: url('/fonts/Dosis/Dosis-Light.ttf') format('truetype');
+  }
+  
+  @font-face {
+      font-family: dosis-medium;
+      src: url('/fonts/Dosis/Dosis-Medium.ttf') format('truetype');
+  }
+  @font-face {
+      font-family: dosis-regular;
+      src: url('/fonts/Dosis/Dosis-Regular.ttf') format('truetype');
+  }
+  @font-face {
+      font-family: dosis-semibold;
+      src: url('/fonts/Dosis/Dosis-SemiBold.ttf') format('truetype');
+  }
+  @font-face {
+      font-family: lxgwwenkaitc-bold;
+      src: url('/fonts/LXGW_WenKai_TC/LXGWWenKaiTC-Bold.ttf') format('truetype');
+  }
+  @font-face {
+      font-family: lxgwwenkaitc-light;
+      src: url('/fonts/LXGW_WenKai_TC/LXGWWenKaiTC-Light.ttf') format('truetype');
+  }
+  @font-face {
+      font-family: lxgwwenkaitc-regular;
+      src: url('/fonts/LXGW_WenKai_TC/LXGWWenKaiTC-Regular.ttf') format('truetype');
+  }
+}
+
+@layer utilities {
+
+  .absolute-center {
+      @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+  }
+  .absolute-center-w{
+    @apply left-1/2 -translate-x-1/2
+  }
+  .absolute-center-h{
+    @apply top-1/2 -translate-y-1/2
+  }
+  .clip-path-hidden {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+  }
+  .text-shadow-br{
+    text-shadow: 5px 5px 4px black;
+  }
+  .text-shadow-br-light{
+    text-shadow: 1.5px 1.5px 4px black;
+  }
+  .text-shadow-light{
+    text-shadow: 
+    2px 2px 4px black,  /* bottom-right */
+    -2px -2px 4px black; /* top-left */
+  }
+  .text-glow-gold{
+    text-shadow: 
+    1px 1px 10px darkgoldenrod,
+    -1px -1px 10px darkgoldenrod, 
+    -1px 1px 10px darkgoldenrod,  
+    1px -1px 10px darkgoldenrod;  
+  }
+  .text-glow{
+    text-shadow: 
+    1px 1px 10px rgb(255, 213, 105),
+    -1px -1px 10px rgb(255, 213, 105), 
+    -1px 1px 10px rgb(255, 213, 105),  
+    1px -1px 10px rgb(255, 213, 105);  
+  }
+  .text-shadow{
+    text-shadow: 
+    1px 1px 5px black ,
+    -1px -1px 5px black , 
+    -1px 1px 5px black  ,  
+    1px -1px 5px black  ;  
+  }
+  .drop-shadow-br{
+    filter: drop-shadow(5px 5px 3px black);
+  }
+  .drop-shadow {
+    filter: 
+    drop-shadow(1px 1px 4px rgb(97, 73, 29))    /* bottom-right */
+    drop-shadow(-1px -1px 4px rgb(97, 73, 29))  /* top-left */
+    drop-shadow(1px -1px 4px rgb(97, 73, 29))   /* top-right */
+    drop-shadow(-1px 1px 4px rgb(97, 73, 29));  /* bottom-left */
+  }
+}
+
+@theme{
+  --font-materialsymbols-regular: "materialsymbols-regular";
+  --font-dosis-bold: "dosis-bold", sans-serif;
+  --font-dosis-extrabold: "dosis-extrabold", sans-serif;
+  --font-dosis-extralight: "dosis-extralight", sans-serif;
+  --font-dosis-light: "dosis-light", sans-serif;
+  --font-dosis-medium: "dosis-medium", sans-serif;
+  --font-dosis-regular: "dosis-regular", sans-serif;
+  --font-dosis-semibold: "dosis-semibold", sans-serif;
+  --font-lxgwwenkaitc-bold: "lxgwwenkaitc-bold", sans-serif;
+  --font-lxgwwenkaitc-light: "lxgwwenkaitc-light", sans-serif;
+  --font-lxgwwenkaitc-regular: "lxgwwenkaitc-regular", sans-serif;
+}
