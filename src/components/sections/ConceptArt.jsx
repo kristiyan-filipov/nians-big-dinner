@@ -35,7 +35,7 @@ const ConceptArt = () => {
     }, {scope: sectionRef});
 
     return (
-        <div ref={sectionRef} className="relative w-screen h-[350lvh] overflow-hidden bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_0%,rgba(17,17,17,0.6)_90%,rgba(17,17,17,0.6)_100%),url('/images/red_background.png')]">
+        <div ref={sectionRef} className="relative w-screen h-[360lvh] overflow-hidden bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_0%,rgba(17,17,17,0.6)_90%,rgba(17,17,17,0.6)_100%),url('/images/red_background.png')]">
             <h2 className="absolute absolute-center-w text-center text-7xl md:text-9xl text-glow-gold text-white top-24 font-dosis-semibold z-50">
                 Concept art
             </h2>
