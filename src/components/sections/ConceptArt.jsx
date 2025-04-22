@@ -15,8 +15,8 @@ const ConceptArt = () => {
     const layers = [
         { ref: bg2Ref, y: "-10%", start: "12%", end: "80%", ease: "power2.out" },
         { ref: bg3Ref, y: "-10%",  start: "28%",  end: "45%", ease: "power2.in" },
-        { ref: bg4Ref, y: "-20%",  start: "40%", end: "115%" },
-        { ref: bg5Ref, y: "-23%",  start: "60%", end: "65%" },
+        { ref: bg4Ref, y: "-20%",  start: "40%", end: "130%" },
+        { ref: bg5Ref, y: "-23.5%",  start: "60%", end: "60%" },
     ];
 
     useGSAP(() => {
