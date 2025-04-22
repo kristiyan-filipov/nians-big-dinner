@@ -21,6 +21,7 @@ const About = () => {
     if (trigger) {
       gsap.to(window, { 
         scrollTo: trigger.end,
+        ease: 'power2.in'
       });
     }
   };
