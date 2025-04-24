@@ -44,8 +44,8 @@ const Contact = () => {
   }, { scope: sectionRef })
 
   return (
-    <footer ref={sectionRef} className='relative w-screen h-lvh bg-cover bg-no-repeat bg-[linear-gradient(to_top,rgba(0,0,0,0)_0%,rgba(17,17,17,0.3)_90%,rgba(17,17,17,0.5)_100%),url("/images/living_room_background.png")]'>
-      <div ref={foregroundRef} className="absolute w-full h-full bg-cover bg-no-repeat bg-[url('/images/living_room_foreground.png')]" />
+    <footer ref={sectionRef} className='relative w-screen h-lvh bg-cover bg-no-repeat bg-[linear-gradient(to_top,rgba(0,0,0,0)_0%,rgba(17,17,17,0.3)_90%,rgba(17,17,17,0.5)_100%),url("/images/living_room_background.webp")]'>
+      <div ref={foregroundRef} className="absolute w-full h-full bg-cover bg-no-repeat bg-[url('/images/living_room_foreground.webp')]" />
       <div ref={backgroundRef} className='absolute inset-0 bg-black opacity-0' />
       <div ref={textRef} className='flex flex-col justify-center items-center gap-10 md:gap-20 w-full h-full font-dosis-regular text-lg lg:text-2xl xl:text-4xl  text-shadow-br-light text-white'>
         <div ref={textOneRef} className='text-center flex flex-col gap-10 w-[80%]'>
@@ -64,7 +64,7 @@ const Contact = () => {
         <div ref={textTwoRef} className='flex flex-col gap-10 md:gap-0 md:flex-row w-full items-center justify-around'>
           <address className='flex flex-col not-italic gap-1 md:gap-4'>
             <div className='font-dosis-semibold text-xl lg:text-2xl xl:text-5xl text-amber-400 flex items-center gap-4'>
-              <img src='./images/credits1.png' className='drop-shadow size-8 xl:size-16' />
+              <img src='./images/credits1.webp' className='drop-shadow size-8 xl:size-16' />
               Personal contact info:
             </div>
             <div>
@@ -105,7 +105,7 @@ const Contact = () => {
           </address>
           <div className='flex flex-col gap-1 md:gap-4'>
             <div className='font-dosis-semibold text-xl lg:text-2xl xl:text-5xl text-amber-400 flex items-center gap-4'>
-              <img src='./images/credits2.png' className='drop-shadow size-8 xl:size-16' />
+              <img src='./images/credits2.webp' className='drop-shadow size-8 xl:size-16' />
               Film Credits :
             </div>
             <div>&bull; Directed and Produced by : Olivia Wang </div>

@@ -46,10 +46,10 @@ const AboutTwo = () => {
     }, {scope: sectionRef})
 
     return (
-        <div ref={sectionRef} className='relative w-screen h-lvh bg-cover xl:bg-center bg-no-repeat bg-[url("/images/kitchen_background.png")]'>
+        <div ref={sectionRef} className='relative w-screen h-lvh bg-cover xl:bg-center bg-no-repeat bg-[url("/images/kitchen_background.webp")]'>
             <div className='absolute w-full h-full pointer-events-none
             bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_0%,rgba(17,17,17,0.2)_90%,rgba(17,17,17,0.6)_100%)] z-10' />
-            <div ref={foregroundRef} className="absolute w-full h-full bg-cover xl:bg-center bg-no-repeat bg-[url('/images/kitchen_foreground.png')]" />
+            <div ref={foregroundRef} className="absolute w-full h-full bg-cover xl:bg-center bg-no-repeat bg-[url('/images/kitchen_foreground.webp')]" />
             <div ref={textBackgroundRef} className='absolute absolute-center h-48 w-xs sm:w-4xl drop-shadow-2xl'>
                 <div className='absolute absolute-center rounded-full w-full h-full bg-red-900/70 blur-xl' />
                 <div ref={textRef} className='relative w-full h-full z-10 

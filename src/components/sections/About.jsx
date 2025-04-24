@@ -69,14 +69,14 @@ const About = () => {
   }, {scope: sectionRef} );
 
   return (
-      <div id="about-section" ref={sectionRef} className='w-screen h-lvh relative overflow-hidden bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_0%,rgba(17,17,17,0.6)_90%,rgba(17,17,17,0.6)_100%),url("/images/red_background.png")]'>
+      <div id="about-section" ref={sectionRef} className='w-screen h-lvh relative overflow-hidden bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_0%,rgba(17,17,17,0.6)_90%,rgba(17,17,17,0.6)_100%),url("/images/red_background.webp")]'>
         <div ref={backgroundRef} className='absolute inset-0 bg-black opacity-0'/>
         <div ref={contentRef} className='h-full mx-10 flex flex-col sm:flex-row justify-center items-center gap-10 sm:gap-13'>
           <Tilt>
             <img
               ref={imageRef}
               className='w-[10rem] sm:w-[16rem] cursor-pointer rounded-sm drop-shadow-2xl'
-              src='images/poster_small.png'
+              src='images/poster_small.webp'
               alt='Poster'
               onClick={handleScrollToEnd}
             />
@@ -99,7 +99,7 @@ const About = () => {
         <img
           ref={fullScreenImageRef}
           className='object-contain max-h-full overflow-hidden cursor-pointer drop-shadow-2xl pointer-events-auto'
-          src='images/poster_small.png'
+          src='images/poster_small.webp'
           alt='Poster'
           onClick={handleScrollToStart}
         />

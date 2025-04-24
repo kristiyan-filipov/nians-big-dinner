@@ -82,7 +82,7 @@ const Hero = () => {
 
   return (
     <div id='hero-section' className='relative h-lvh w-screen overflow-x-hidden bg-repeat select-none overflow-hidden
-      bg-[linear-gradient(to_top,rgba(0,0,0,0)_0%,rgba(17,17,17,0.35)_90%,rgba(17,17,17,0.65)_100%),url("/images/red_background.png")]'>
+      bg-[linear-gradient(to_top,rgba(0,0,0,0)_0%,rgba(17,17,17,0.35)_90%,rgba(17,17,17,0.65)_100%),url("/images/red_background.webp")]'>
       <div ref={videoContainerRef} className='absolute w-full h-lvh overflow-hidden clip-path-hidden z-10'>
         <div className='absolute pointer-events-none top-0 left-0 w-full h-lvh 
           bg-[linear-gradient(to_top,rgba(0,0,0,0)_0%,rgba(17,17,17,0.4)_90%,rgba(17,17,17,0.7)_100%)]' />
@@ -126,7 +126,7 @@ const Hero = () => {
         <img
           ref={imageRef}
           onClick={handleImageClick}
-          src='./images/red_packet.png'
+          src='./images/red_packet.webp'
           alt='Envelope'
         />
       </Tilt>

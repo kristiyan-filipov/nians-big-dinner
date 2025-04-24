@@ -35,43 +35,43 @@ const ConceptArt = () => {
     }, {scope: sectionRef});
 
     return (
-        <div ref={sectionRef} className="relative w-screen h-[360lvh] overflow-hidden bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_0%,rgba(17,17,17,0.6)_90%,rgba(17,17,17,0.6)_100%),url('/images/red_background.png')]">
+        <div ref={sectionRef} className="relative w-screen h-[360lvh] overflow-hidden bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_0%,rgba(17,17,17,0.6)_90%,rgba(17,17,17,0.6)_100%),url('/images/red_background.webp')]">
             <h2 className="absolute absolute-center-w text-center text-7xl md:text-9xl text-glow-gold text-white top-24 font-dosis-semibold z-50">
                 Concept art
             </h2>
             <div  className="absolute inset-0 flex justify-center z-0">
                 <img
-                    src="./images/long_background/long_background.png"
+                    src="./images/long_background/long_background.webp"
                     className="h-full w-auto object-cover object-center"
                 />
             </div>
             <div  className="absolute inset-0 flex justify-center z-30">
                 <img
-                    src="./images/long_background/long_background1.png"
+                    src="./images/long_background/long_background1.webp"
                     className="h-full w-auto object-cover object-center"
                 />
             </div>
             <div ref={bg2Ref} className="absolute inset-0 flex justify-center z-20">
                 <img
-                    src="./images/long_background/long_background2.png"
+                    src="./images/long_background/long_background2.webp"
                     className="h-full w-auto object-cover object-center"
                 />
             </div>
             <div ref={bg3Ref} className="absolute inset-0 flex justify-center z-20">
                 <img
-                    src="./images/long_background/long_background3.png"
+                    src="./images/long_background/long_background3.webp"
                     className="h-full w-auto object-cover object-center"
                 />
             </div>
             <div ref={bg4Ref} className="absolute inset-0 flex justify-center z-10">
                 <img
-                    src="./images/long_background/long_background4.png"
+                    src="./images/long_background/long_background4.webp"
                     className="h-full w-auto object-cover object-center"
                 />
             </div>
             <div ref={bg5Ref} className="absolute inset-0 flex justify-center z-10">
                 <img
-                    src="./images/long_background/long_background5.png"
+                    src="./images/long_background/long_background5.webp"
                     className="h-full w-auto object-cover object-center"
                 />
             </div>
